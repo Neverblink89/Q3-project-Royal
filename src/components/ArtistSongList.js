@@ -6,7 +6,6 @@ import { addToCart } from '../redux/actions/songs'
 
 const ArtistSongList = (props) => {
 let id = props.id
-console.log(props)
   return (
 
     <tr>

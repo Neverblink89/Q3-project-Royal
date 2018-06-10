@@ -12,8 +12,6 @@ import { fetchIndividual } from './redux/actions/individual'
 let newStore = store()
 newStore.dispatch(fetchArtists())
 newStore.dispatch(fetchSongs())
-newStore.dispatch(fetchIndividual())
-
 
 ReactDOM.render(
   <Provider store={newStore}>

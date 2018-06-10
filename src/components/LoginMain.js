@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import LoginForm from './LoginForm'
 import RegisterForm from './RegisterForm'
 
+
 class LoginMain extends Component {
 
 
@@ -9,10 +10,10 @@ class LoginMain extends Component {
         isToggle:false,
         toggled:false
       }
-      toggleLogin(){
+      toggleLogin = (e)=>{
        this.setState({isToggle:!this.state.isToggle})
      }
-     toggleRegister(){
+     toggleRegister = (e)=>{
        this.setState({toggled:!this.state.toggled})
      }
 
@@ -24,9 +25,9 @@ class LoginMain extends Component {
 
       <div className="login-body-container">
         <div className="login-button-container">
-          <a  onClick={()=> this.setState({isToggle: !this.state.isToggle})}  className="login-button">LOG IN</a>
+          <a  onClick={(e)=> this.setState({isToggle: !this.state.isToggle})}  className="login-button">LOG IN</a>
 
-          <a onClick={()=> this.setState({toggled: !this.state.toggled})}  className="register-button">REGISTER</a>
+          <a onClick={(ed)=> this.setState({toggled: !this.state.toggled})}  className="register-button">REGISTER</a>
         </div>
         <div className="login-page-title">
           <h1>Express yourself.</h1>

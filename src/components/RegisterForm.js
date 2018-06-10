@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+import { Link } from 'react-router-dom'
 class RegisterForm extends Component {
 
   render() {
@@ -11,24 +11,24 @@ class RegisterForm extends Component {
         <label for="uname">
           <b>Email</b>
         </label>
-        <input type="text" placeholder="Enter Username"  required="required"/>
+        <input className="login-input" type="text" placeholder="Enter Username"  required="required"/>
 
         <label for="psw">
           <b>Password</b>
         </label>
-        <input type="password" placeholder="Enter Password"  required="required"/>
+        <input className="login-input" type="password" placeholder="Enter Password"  required="required"/>
 
           <label for="name">
             <b>Full Name</b>
           </label>
-          <input type="text" placeholder="Enter Name"  required="required"/>
+          <input className="login-input" type="text" placeholder="Enter Name"  required="required"/>
 
             <label for="image_url">
               <b>Image Url</b>
             </label>
-            <input type="text" placeholder="Enter an image url..." name="image_url" required="required"/>
+            <input className="login-input" type="text" placeholder="Enter an image url..." name="image_url" required="required"/>
 
-        <button type="submit">Login</button>
+        <Link to="/"><button type="submit">Register</button></Link>
 
       </div>
 

@@ -43,3 +43,19 @@ export const addToCart = (id) => {
   }
 }
 }
+
+export const deleteSong = (id) => {
+  return dispatch => {
+    try{
+      dispatch({
+        type:DELETE_CART_SUCCESS,
+        payload: id
+      })
+    } catch(err){
+      dispatch({
+        type:DELETE_CART_FAILED,
+        payload: id
+      })
+    }
+  }
+}

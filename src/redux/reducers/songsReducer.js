@@ -6,6 +6,7 @@ import {
   DELETE_CART_FAILED,
   DELETE_CART_SUCCESS
 
+
 } from '../actions/songs'
 
 let initialState = []
@@ -24,7 +25,7 @@ export default(state = initialState, action) => {
     case ADD_CART_FAILED:
       return action.payload
     case DELETE_CART_SUCCESS:
-      return state
+      return state.filter(song => song.id !== action.payload)
     case DELETE_CART_FAILED:
       return state
     default:

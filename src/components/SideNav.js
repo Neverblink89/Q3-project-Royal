@@ -10,7 +10,6 @@ const SideNav = (props) => {
     <div className="side-nav-container">
       <Library />
       <Playlists />
-      <AddPlaylist />
       </div>
 
   )

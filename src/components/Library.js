@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -12,9 +12,9 @@ const Library = (props) => {
         <span className='tags'>YOUR LIBRARY</span>
         <br/>
         <br/>
-        <div className="library">Recently Played</div>
-        <div className="library" >Songs</div>
-        <div className="library">Albums</div>
+        <Link className="popular-route" to={"/popular"}><div className="library">Popular Albums</div></Link>
+        <div className="library" >Top Songs</div>
+        <div className="library">Browser</div>
         <div className="library">Stations</div>
         <div className="library">Local Files</div>
         <div className="library">Videos</div>
