@@ -28,7 +28,6 @@ class ContentHeader extends Component {
             </div>
           </div>
         </div>
-
         <div className="choices-container">
           <h1>Top Albums</h1>
           <hr/>

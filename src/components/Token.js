@@ -9,7 +9,6 @@ const Token = (props) => {
   return (<div className="background-container">
     <div className="checkout-wrapper">
       <div className="logo-wrapper"></div>
-
     <div className="token-text">Royal</div>
       <div id="secret">
         <h2>Your Token will be verified by Youtube shortly...</h2>
