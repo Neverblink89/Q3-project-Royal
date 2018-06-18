@@ -11,7 +11,6 @@ import { Link } from 'react-router-dom'
 return (
       <div className="circle-container">
         <div className="artist-circles">
-        //fires action that fetches artist id and creates links to each of their respective pages.
           <Link to="/artist"><a onClick={() => props.fetchIndividual(id)} ><img className='artist-image'  alt='blah' src={props.album.album_url}/></a></Link>
             </div>
           <h3>{props.album.artist_name}</h3>

@@ -37,7 +37,6 @@ state={
                     </div>
                   <div className='user-name-container'>
                 Jordon Frank
-              //toggles cart if a modal exists
               <Link to="/checkout"><span onClick={()=> this.setState({showCart:!this.state.showCart})} className='logout'><i class="fas fa-cart-arrow-down">{songs}</i> </span></Link>
           </div>
         </div>
